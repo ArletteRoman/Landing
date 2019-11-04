@@ -1,0 +1,56 @@
+{
+    "HEADER": {
+        "rest": "REST",
+        "aboutUs": "About Us",
+        "menu": "Menu",
+        "events": "Events",
+        "news": "News",
+        "contact": "Contact"
+    },
+    "LANDING": {
+        "HEADER": {
+            "welcome": "Welcome to our restaurant",
+            "everyDay": "Everyday 8:00 am - 23:00 pm",
+            "bookATable": "Book a table",
+            "seeMenu": "See menu"
+        },
+        "HISTORY": {
+            "discover": "Discover",
+            "ourHistory": "Our History",
+            "historyDesc": "A peep at some distant orb has power to raise and purify our thoughts like a strain of sacred music, or a noble picture, or a passage from the grander poets. It always does one good.",
+            "readMore": "Read more"
+        },
+        "OFFERS": {
+            "checkout": "Check out our",
+            "seasonal": "Seasonal Offers"
+        },
+        "LUNCH": {
+            "tasty": "Tasty dishes",
+            "lunch": "For Lunch",
+            "full": "Full menu"
+        },
+        "EVENTS": {
+            "party": "Party with us!",
+            "events": "Upcoming Events",
+            "upcoming": "Upcoming",
+            "coffeeNight": "Coffee Night",
+            "date": "25 september, 2019",
+            "body": "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle."
+        },
+        "GALLERY": {
+            "gallery": "Gallery",
+            "interior": "Our Interior"
+        },
+        "ABOUT": {
+            "what": "What people",
+            "sayAbout": "Say About Us",
+            "comment": "As I went on, still gaining velocity, the palpitation of night and day merged into one continuous greyness the sky took on a wonderful deepness of blue, a splendid luminous color like that of early twilight; the jerking sun became a streak of fire, a brilliant arch.",
+            "magnus": "Magnus Kekhuis",
+            "restaurant": "Restaurant expert"
+        },
+        "NEWS": {
+            "press": "Press",
+            "aboutUs": "About Us"
+        }
+    }
+}

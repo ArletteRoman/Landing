@@ -1,0 +1,118 @@
+$purple: #6327eb;
+$background: #f9f7f2;
+$text: #333333;
+$header-background: rgba(51,51,51,0.9);
+$text-light: rgba(51,51,51,0.5);
+$grey-light: rgba(255,255,255,0.5);
+$brown: #bba285;
+$divider: #eaeaea;
+
+/* COLORS PALETTE THEME */
+$md-primary: (
+    50: #ECE5FD,
+    100: #D0BEF9, 
+    200: #B193F5, 
+    300: #9268F1,
+    400: #7A47EE,
+    500: #6327EB,
+    600: #5B23E9,
+    700: #511DE5,
+    800: #4717E2,
+    900: #350EDD,
+    A100: #FFFFFF, 
+    A200: #DCD5FF,
+    A400: #B1A2FF,
+    A700: #9B89FF,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #ffffff,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+$md-accent: (
+    50: #F7F4F0, 
+    100: #EBE3DA, 
+    200: #DDD1C2,
+    300: #CFBEAA, 
+    400: #C5B097, 
+    500: #BBA285, 
+    600: #B59A7D, 
+    700: #AC9072, 
+    800: #A48668, 
+    900: #967555, 
+    A100: #FFFDFC, 
+    A200: #FFE3C9, 
+    A400: #FFC996, 
+    A700: #FFBC7C,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$md-warn: (
+    50 : #fae0e0,
+    100 : #f4b3b3,
+    200 : #ec8080,
+    300 : #e44d4d,
+    400 : #df2626,
+    500 : #d90000,
+    600 : #d50000,
+    700 : #cf0000,
+    800 : #ca0000,
+    900 : #c00000,
+    A100 : #ffe9e9,
+    A200 : #ffb6b6,
+    A400 : #ff8383,
+    A700 : #ff6969,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+/* END COLORS PALETTE THEME */
+
+/* CUSTOM THEME */
+@import "~@angular/material/theming";
+@include mat-core();
+$app-primary: mat-palette($md-primary);
+$app-accent: mat-palette($md-accent);
+$app-warn: mat-palette($md-warn);
+$app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
+@include angular-material-theme($app-theme);

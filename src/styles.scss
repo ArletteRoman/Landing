@@ -1,1 +1,120 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'src/assets/scss/colors.scss';
+@import 'src/assets/scss/fonts.scss';
+@import 'src/assets/scss/sizes.scss';
+@import 'src/assets/scss/buttons.scss';
+// GENREAL
+body {
+    background: $background;
+    scroll-behavior: smooth;
+}
+body, p, button {
+    margin: 0;
+    padding: 0;
+}
+.font-pt-serif {
+    font-family: 'PT Serif', serif;
+}
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+button {
+    border: none;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    &:hover, &:focus {
+        outline: none;
+    }
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    &:hover{
+        text-decoration: none !important;
+        color: inherit;
+    }
+}
+img {
+    max-width: 100%;
+}
+//GENREAL'S END
+
+//DISPLAY
+.disp-row {
+    display: flex;
+    flex-direction: row;
+}
+.disp-column {
+    display: flex;
+    flex-direction: column;
+}
+.just-sb {
+    justify-content: space-between;
+}
+.just-center {
+    justify-content: center;
+}
+.align-center {
+    align-items: center;
+}
+
+.hide-desktop {
+    @media #{$break-desktop} {
+        display: none !important;
+    }
+}
+
+.hide-mobile {
+    @media #{$break-tablet-down} {
+        display: none !important;
+    }
+}
+// FONT SIZE
+.font-14 {
+    font-size: 14px;
+}
+.font-20 {
+    font-size: 20px;
+}
+.font-24 {
+    font-size: 24px;
+}
+.font-40 {
+    font-size: 40px;
+}
+.font-56 {
+    font-size: 40px;
+    @media #{$break-desktop} {
+        font-size: 56px;
+    }
+}
+.font-72 {
+    font-size: 56px;
+    @media #{$break-desktop} {
+        font-size: 72px;
+    }
+}
+// FONT SIZE'S END
+
+// FONT WEIGHT
+.font-bold {
+    font-weight: bold;
+}
+.font-w-300 {
+    font-weight: 300;
+}
+.font-w-400 {
+    font-weight: 400;
+}
+// FONT WEIGHT'S END
+
+// TEXT
+.text-center{
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}

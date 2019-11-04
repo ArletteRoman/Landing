@@ -1,0 +1,44 @@
+@import 'src/assets/scss/sizes.scss';
+@import 'src/assets/scss/colors.scss';
+nav {
+    padding: 14px;
+    color: white;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    line-height: 1.6;
+    mat-icon {
+        width: 48px;
+        height: 48px;
+    }
+    .nav-brand {
+        color: white;
+    }
+    
+    @media #{$break-desktop} {
+        padding: 16px 9.4% 0 9.4%;
+        max-height: 48px;
+        .menu {
+            width: 100%;
+        }
+        ul {
+            width: 100%;
+            li {
+                margin: 0 8px;
+            }
+        }
+        .menu-social-media {
+            button {
+                margin: 0 4px;
+            }
+        }
+    }
+    @media #{$large-sreen} {
+        ul {
+            li {
+                margin: 0 18px;
+            }
+        }
+    }
+}

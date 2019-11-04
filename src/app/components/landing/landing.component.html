@@ -1,0 +1,174 @@
+<section class="welcome text-center" id="welcome">
+    <div class="welcome-sections align-center">
+        <div class="text-left welcome-dots-section">
+            <img src="assets/icons/dots.svg" alt="dots">
+            <p class="font-pt-serif font-72 welcome-title">{{'LANDING.HEADER.welcome' | translate}}</p>
+            <p class="font-roboto font-24 welcome-subtitle">{{'LANDING.HEADER.everyDay' | translate}}</p>
+            <mat-chip-list class="disp-row">
+                <mat-chip color="primary" selected>
+                    {{'LANDING.HEADER.bookATable' | translate}}
+                </mat-chip>
+                <button mat-stroked-button>{{'LANDING.HEADER.seeMenu' | translate}}</button>
+            </mat-chip-list>
+        </div>
+        <img src="assets/images/food.png" alt="header food">
+    </div>
+    <button class="welcome-button-bottom hide-mobile">
+        <mat-icon svgIcon="ic-arrow-bottom"></mat-icon>
+    </button>
+</section>
+<section id="history" class="history">
+    <div class="history-images">
+        <img class="history-dots" src="assets/icons/dots-dark.svg" alt="dots">
+        <img class="history-main-image" src="assets/images/history.png" alt="history">
+        <div class="history-icon"></div>
+    </div>
+    <div class="history-text">
+        <p class="font-roboto font-24">{{'LANDING.HISTORY.discover' | translate}}</p>
+        <p class="font-pt-serif font-56 history-title">{{'LANDING.HISTORY.ourHistory' | translate}}</p>
+        <p class="font-roboto font-20 history-body font-w-300">{{'LANDING.HISTORY.historyDesc' | translate}}</p>
+        <mat-chip-list class="disp-row">
+            <mat-chip color="primary" selected>
+                {{'LANDING.HISTORY.readMore' | translate}}
+            </mat-chip>
+        </mat-chip-list>
+    </div>
+</section>
+<section id="offers" class="offers">
+    <div class="offers-main">
+        <div class="offers-text">
+            <div class="offers-text-header">
+                <img class="history-dots" src="assets/icons/dots-dark.svg" alt="dots">
+                <p class="offers-text-subtitle font-24 font-roboto font-w-400">{{'LANDING.OFFERS.checkout' | translate}}
+                </p>
+                <p class="offers-text-title font-pt-serif font-56 font-bold">{{'LANDING.OFFERS.seasonal' | translate}}
+                </p>
+            </div>
+            <div class="offers-text-body">
+                <div class="offers-card" *ngFor="let offer of offers">
+                    <div class="disp-row just-sb">
+                        <p class="offers-card-title font-20 font-roboto font-w-400">{{offer.title}}</p>
+                        <p class="offers-card-price font-20 font-roboto font-w-300">{{ offer.price | currency}}</p>
+                    </div>
+                    <div class="disp-row just-sb">
+                        <p class="offers-card-desc font-14 font-roboto">{{offer.desc}}</p>
+                        <p class="offers-card-price font-20 font-roboto font-w-300">{{offer.rating}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offers-image">
+            <img src="assets/images/food2.png" alt="food">
+        </div>
+    </div>
+</section>
+<section class="lunch">
+    <p class="lunch-subtitle font-24 font-roboto font-w-400 text-center">{{'LANDING.LUNCH.tasty' | translate}}</p>
+    <p class="lunch-tilte font-pt-serif font-56 font-bold text-center">{{'LANDING.LUNCH.lunch' | translate}}</p>
+    <div class="lunch-dishes">
+        <div class="card-dish disp-row" *ngFor="let dish of dishes; let i = index" [class.card-dish-right]="i > 2"
+            [class.card-dish-left]="i <= 2">
+            <img src="assets/images/food.png" alt="">
+            <div class="disp-column just-center">
+                <p class="disp-row just-sb">
+                    <span
+                        class="dish-title font-20 font-w-400 font-roboto hide-desktop">{{(dish.title |slice:0:15) + '...'}}</span>
+                    <span class="dish-title font-20 font-w-400 font-roboto hide-mobile">{{dish.title}}</span>
+                    <span class="dish-price font-20 font-roboto">{{dish.price | currency}}</span>
+
+                </p>
+                <p class="disp-row just-sb">
+                    <span class="dish-desc font-14 font-roboto hide-desktop">{{(dish.desc | slice:0:15) + '...'}}</span>
+                    <span class="dish-desc font-14 font-roboto hide-mobile">{{dish.desc}}</span>
+                    <span class="dish-rating font-20 font-roboto">{{dish.rating}}</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <mat-chip-list class="disp-row just-center">
+        <mat-chip color="primary" selected>
+            {{'LANDING.LUNCH.full' | translate}}
+        </mat-chip>
+    </mat-chip-list>
+
+</section>
+
+<section id="events" class="events">
+    <p class="events-subtitle font-24 font-w-400 text-center font-roboto">{{'LANDING.EVENTS.party' | translate}}</p>
+    <p class="events-title text-center font-pt-serif font-56 font-bold">{{'LANDING.EVENTS.events' | translate}}</p>
+    <div class="events-content">
+        <img src="assets/images/coffee.png" alt="coffee">
+        <div class="events-content-text">
+            <p class="font-roboto font-20">{{'LANDING.EVENTS.upcoming' | translate}}</p>
+            <p class="font-pt-serif font-40 font-bold">{{'LANDING.EVENTS.coffeeNight' | translate}}</p>
+            <p class="font-14 font-roboto events-content-date">{{'LANDING.EVENTS.date' | translate}}</p>
+            <div class="disp-row">
+                <p class="font-roboto font-20">{{'LANDING.EVENTS.body' | translate}}</p>
+                <button class="hide-mobile">
+                    <mat-icon svgIcon="ic-arrow-right"></mat-icon>
+                </button>
+            </div>
+            <mat-chip-list>
+                <mat-chip color="primary" selected>
+                    {{'LANDING.HEADER.bookATable' | translate}}
+                </mat-chip>
+            </mat-chip-list>
+        </div>
+    </div>
+    <img class="events-dots" src="assets/icons/dots.svg" alt="dots">
+</section>
+<section class="gallery">
+    <p class="font-24 font-w-400 text-center font-roboto">{{'LANDING.GALLERY.gallery' | translate}}</p>
+    <p class="text-center font-pt-serif font-56 font-bold">{{'LANDING.GALLERY.interior' | translate}}</p>
+    <div class="gallery-content">
+        <img src="{{image}}" alt="image" *ngFor="let image of gallery">
+    </div>
+</section>
+<section class="about-us">
+    <p class="font-24 font-w-400 text-center font-roboto">{{'LANDING.ABOUT.what' | translate}}</p>
+    <p class="text-center font-pt-serif font-56 font-bold">{{'LANDING.ABOUT.sayAbout' | translate}}</p>
+    <div class="about-carousel disp-row just-sb align-center">
+        <div class="carousel-prev hide-mobile">
+            <button>
+                <mat-icon svgIcon="ic-arrow-left"></mat-icon>
+            </button>
+        </div>
+        <div class="carousel-slide">
+            <div class="about-carousel-image">
+                <img src="assets/icons/dots-dark.svg" alt="dots">
+                <img class="about-carousel-user" src="assets/images/user.svg" alt="user">
+            </div>
+            <div class="about-carousel-content">
+                <p class="font-20 font-roboto">{{'LANDING.ABOUT.comment' |translate}}</p>
+                <div class="about-rating">
+                    <img src="assets/icons/fill-star.svg" alt="fill-star">
+                    <img src="assets/icons/fill-star.svg" alt="fill-star">
+                    <img src="assets/icons/fill-star.svg" alt="fill-star">
+                    <img src="assets/icons/fill-star.svg" alt="fill-star">
+                    <img src="assets/icons/empty-star.svg" alt="empty-star">
+                </div>
+                <p class="font-24 font-bold font-pt-serif">{{'LANDING.ABOUT.magnus' |translate}}</p>
+                <p class="about-carousel-job font-20 font-roboto">{{'LANDING.ABOUT.restaurant' |translate}}</p>
+            </div>
+        </div>
+        <div class="carousel-next hide-mobile">
+            <button>
+                <mat-icon svgIcon="ic-arrow-right"></mat-icon>
+            </button>
+        </div>
+    </div>
+</section>
+<section class="news">
+        <p class="font-24 font-w-400 text-center font-roboto">{{'LANDING.NEWS.press' | translate}}</p>
+        <p class="text-center font-pt-serif font-56 font-bold">{{'LANDING.NEWS.aboutUs' | translate}}</p>
+        <div class="news-section disp-row just-sb">
+            <div *ngFor="let new of news" class="new-card">
+                <img src="{{new.image}}" alt="image">
+                <p class="font-20 font-roboto card-body">{{new.body}}</p>
+                <p class="font-24 font-pt-serif font-bold">{{new.name}}</p>
+            </div>
+        </div>
+        <div class="text-center">
+            <img class="news-dots" src="assets/icons/dots.svg" alt="dots">
+        </div>
+</section>

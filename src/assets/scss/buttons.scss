@@ -1,0 +1,17 @@
+button.mat-stroked-button:not([disabled]) {
+    font-family: Helvetica;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    font-size: 18px !important;
+    width: 170px;
+    height: 48px !important;
+    justify-content: center;
+}
+.mat-chip {
+    border-radius: 3px !important;
+    font-family: Helvetica;
+    font-size: 18px !important;
+    width: 170px;
+    height: 48px !important;
+    justify-content: center;
+}
